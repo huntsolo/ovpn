@@ -4,9 +4,6 @@
 #
 # Copyright (c) 2013 Nyr. Released under the MIT License.
 
-mkdir /opt/keys
-chown -R ubuntu:ubuntu /opt/keys
-
 # Detect Debian users running the script with "sh" instead of bash
 if readlink /proc/$$/exe | grep -q "dash"; then
 	echo 'This installer needs to be run with "bash", not "sh".'
