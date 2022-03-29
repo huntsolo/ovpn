@@ -427,6 +427,7 @@ verb 3" > /etc/openvpn/server/client-common.txt
 	echo "Finished!"
 	echo
 	echo "The client configuration is available in:" ~/"$client.ovpn"
+	mv /root/*.ovpn /opt/keys
 	echo "New clients can be added by running this script again."
 else
 	clear
